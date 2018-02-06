@@ -1,6 +1,13 @@
 # Alpine monero node docker
 
 Uses alpine edge with testing repository. Use with caution.
+Additionally these binaries are removed during image build to reduce size:
+```
+/usr/bin/monero-blockchain-import
+/usr/bin/monero-blockchain-export
+/usr/bin/monero-wallet-rpc
+/usr/bin/monero-wallet-cli
+```
 
 Example run:
 ```
