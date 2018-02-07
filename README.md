@@ -22,3 +22,5 @@ Example bootstrap from raw blockchain file:
 docker run -it -v /path/to/host/directory:/root/.bitmonero --entrypoint /root/bootstrap.sh mazhead/alpine_monerod:latest
 ```
 **Please note that this bootstrap uses a raw blockchain file and will not use the verify option. So if you do not trust the source use the sync over network above**
+
+You can run the bootstrap version multiple times as it happens that wget may fail during download. The blochain.raw should have >29GB in final.
